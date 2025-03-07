@@ -1,4 +1,4 @@
-HSR - Chatbot de IA
+# HSR - Chatbot de IA 
 
 HSR é um chatbot de inteligência artificial desenvolvido em React no frontend e com suporte a APIs de IA no backend. Este projeto visa fornecer uma interface interativa para comunicação com um modelo de IA.
 
