@@ -34,8 +34,8 @@ O projeto estará disponível em http://localhost:5173
 
 **4. Rodar o Backend**
 
-cd backend
-npm install
-node server.js
+- cd backend
+- npm install
+- node server.js
 
 O backend rodará em http://localhost:5000
