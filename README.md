@@ -28,7 +28,7 @@ npm install
 
 **3. Rodar o Frontend**
 
-npm run dev
+cd hsr > cd src > npm run dev
 
 O projeto estará disponível em http://localhost:5173
 
