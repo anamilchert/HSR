@@ -6,9 +6,13 @@ HSR é um chatbot de inteligência artificial desenvolvido em React no frontend 
 🚀 ***Tecnologias Utilizadas***
 
 React - Framework para construção do frontend
+
 Vite - Ferramenta de build rápida para React
+
 Axios - Para requisições HTTP
+
 Node.js e Express
+
 OpenAI API 
 
 
@@ -62,13 +66,13 @@ Justificativa da escolha:
 
 ***Fluxo**
 [ Usuário ]
-    ↓
+    ->
 [ Frontend React ]
-    ↓ (mensagem via HTTP)
+    -> (mensagem via HTTP)
 [ Backend Express ]
-    ↓
+    ->
 [ Serviço IA (ex: OpenAI) ]
-    ↓
+    ->
 [ Backend envia resposta ]
-    ↓
+    ->
 [ Frontend exibe mensagem ]
