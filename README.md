@@ -69,3 +69,11 @@ O backend rodará em http://localhost:5000
 - RNF05 - Manutenibilidade: O código deve ser modular e documentado para facilitar atualizações e manutenção.
 
 - RNF06 - Disponibilidade: O sistema deve estar disponível 99% do tempo, com exceção de períodos programados de manutenção.
+
+***Arquitetura Escolhida: Monolítica Estruturada***
+Justificativa da escolha:
+- Simplicidade: Ideal para MVPs e projetos em fase inicial.
+- Fácil manutenção: Um único backend, um único deploy.
+- Desempenho: Sem sobrecarga de comunicação entre serviços via rede.
+- Baixo custo: Menos infraestrutura envolvida.
+- Atende totalmente aos RF e RNF: Toda lógica está concentrada e pode ser modularizada dentro do mesmo app.
