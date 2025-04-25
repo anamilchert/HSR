@@ -71,6 +71,7 @@ O backend rodará em http://localhost:5000
 - RNF06 - Disponibilidade: O sistema deve estar disponível 99% do tempo, com exceção de períodos programados de manutenção.
 
 ***Arquitetura Escolhida: Monolítica Estruturada***
+
 Justificativa da escolha:
 - Simplicidade: Ideal para MVPs e projetos em fase inicial.
 - Fácil manutenção: Um único backend, um único deploy.
