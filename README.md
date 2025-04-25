@@ -41,59 +41,31 @@ O projeto estará disponível em http://localhost:5173
 O backend rodará em http://localhost:5000
 
 
-**Requisitos Funcionais (RF)**
-RF01 - Interface de Chat:
+****Requisitos Funcionais (RF)****
+- RF01 - Interface de Chat: O sistema deve permitir que o usuário envie mensagens de texto para o chatbot por meio de uma interface interativa.
 
-O sistema deve permitir que o usuário envie mensagens de texto para o chatbot por meio de uma interface interativa.
+- RF02 - Respostas da IA: O sistema deve exibir as respostas do modelo de IA em tempo real após o envio da mensagem pelo usuário.
 
-RF02 - Respostas da IA:
+- RF03 - Integração com API de IA: O backend deve se comunicar com uma API de modelo de IA (como OpenAI, por exemplo) para processar as mensagens do usuário e retornar as respostas.
 
-O sistema deve exibir as respostas do modelo de IA em tempo real após o envio da mensagem pelo usuário.
+- RF04 - Histórico de Conversas: O sistema deve armazenar e exibir o histórico da conversa durante a sessão atual do usuário.
 
-RF03 - Integração com API de IA:
+- RF05 - Limpeza do Chat: O sistema deve permitir que o usuário limpe o histórico da conversa atual.
 
-O backend deve se comunicar com uma API de modelo de IA (como OpenAI, por exemplo) para processar as mensagens do usuário e retornar as respostas.
+- RF06 - Detecção de Erros: O sistema deve informar ao usuário caso ocorra um erro de conexão com a API de IA ou falha de resposta.
 
-RF04 - Histórico de Conversas:
+- RF07 - Responsividade: A interface deve se adaptar a diferentes tamanhos de tela (desktop, tablet, mobile).
 
-O sistema deve armazenar e exibir o histórico da conversa durante a sessão atual do usuário.
+****Requisitos Não Funcionais (RNF)****
 
-RF05 - Limpeza do Chat:
+- RNF01 - Desempenho: O sistema deve responder às mensagens do usuário em até 3 segundos em condições normais de rede.
 
-O sistema deve permitir que o usuário limpe o histórico da conversa atual.
+- RNF02 - Escalabilidade: O backend deve estar preparado para escalabilidade horizontal em caso de aumento de usuários simultâneos.
 
-RF06 - Detecção de Erros:
+- RNF03 - Segurança: As requisições para a API de IA devem ser autenticadas e protegidas contra acessos indevidos. O sistema não deve armazenar informações sensíveis do usuário sem consentimento.
 
-O sistema deve informar ao usuário caso ocorra um erro de conexão com a API de IA ou falha de resposta.
+- RNF04 - Usabilidade: A interface deve ser intuitiva, com design acessível e fácil navegação.
 
-RF07 - Responsividade:
+- RNF05 - Manutenibilidade: O código deve ser modular e documentado para facilitar atualizações e manutenção.
 
-A interface deve se adaptar a diferentes tamanhos de tela (desktop, tablet, mobile).
-
-**Requisitos Não Funcionais (RNF)**
-
-RNF01 - Desempenho:
-
-O sistema deve responder às mensagens do usuário em até 3 segundos em condições normais de rede.
-
-RNF02 - Escalabilidade:
-
-O backend deve estar preparado para escalabilidade horizontal em caso de aumento de usuários simultâneos.
-
-RNF03 - Segurança:
-
-As requisições para a API de IA devem ser autenticadas e protegidas contra acessos indevidos.
-
-O sistema não deve armazenar informações sensíveis do usuário sem consentimento.
-
-RNF04 - Usabilidade:
-
-A interface deve ser intuitiva, com design acessível e fácil navegação.
-
-RNF05 - Manutenibilidade:
-
-O código deve ser modular e documentado para facilitar atualizações e manutenção.
-
-RNF06 - Disponibilidade:
-
-O sistema deve estar disponível 99% do tempo, com exceção de períodos programados de manutenção.
+- RNF06 - Disponibilidade: O sistema deve estar disponível 99% do tempo, com exceção de períodos programados de manutenção.
