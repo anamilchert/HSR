@@ -1,35 +1,69 @@
 .register {
   background-color: #212C59;
   color: #FFFFFF;
-  max-width: 300px;
+  max-width: 100%;
   margin: auto;
-  padding: 20px;
+  padding: 30px 25px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(33, 44, 89, 0.6);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
 }
 
 .register form input {
   display: block;
-  margin: 10px 0;
+  margin: 15px 0;
   width: 100%;
-  padding: 8px;
-  border: 1px solid #FFFFFF;
+  padding: 12px 15px;
+  border: 1.5px solid #FFFFFF;
   background-color: transparent;
   color: #FFFFFF;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  text-align: center;
+}
+
+.register form input::placeholder {
+  color: #cfcfcf;
+  text-align: center;
+}
+
+.register form input:focus {
+  outline: none;
+  border-color: #6ea0ff;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .register form button {
   background-color: #FFFFFF;
   color: #212C59;
-  padding: 10px;
+  padding: 12px;
   border: none;
   cursor: pointer;
+  font-weight: 600;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .register form button:hover {
   background-color: #212C59;
   color: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  border: 1.5px solid #FFFFFF;
 }
