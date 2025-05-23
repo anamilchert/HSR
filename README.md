@@ -38,11 +38,11 @@ O backend rodará em http://localhost:5000
 
 
 ****Requisitos Funcionais (RF)****
-RF01 - Interface de Chat: O sistema deve permitir que o usuário envie mensagens de texto para o chatbot por meio de uma interface interativa.
-RF02 - Respostas da IA: O sistema deve exibir as respostas do modelo de IA em tempo real após o envio da mensagem pelo usuário.
-RF03 - Histórico de Conversas: O sistema deve armazenar e exibir o histórico da conversa durante a sessão atual do usuário.
-RF04 - Limpeza do Chat: O sistema deve permitir que o usuário limpe o histórico da conversa atual.
-RF05 - Autenticação de Usuário: O sistema deve permitir que o usuário registre-se e faça login para acessar a funcionalidade de chat.
+- RF01 - Interface de Chat: O sistema deve permitir que o usuário envie mensagens de texto para o chatbot por meio de uma interface interativa.
+- RF02 - Respostas da IA: O sistema deve exibir as respostas do modelo de IA em tempo real após o envio da mensagem pelo usuário.
+- RF03 - Histórico de Conversas: O sistema deve armazenar e exibir o histórico da conversa durante a sessão atual do usuário.
+- RF04 - Limpeza do Chat: O sistema deve permitir que o usuário limpe o histórico da conversa atual.
+- RF05 - Autenticação de Usuário: O sistema deve permitir que o usuário registre-se e faça login para acessar a funcionalidade de chat.
 
 ****Requisitos Não Funcionais (RNF)****
 
