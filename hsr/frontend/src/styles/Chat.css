@@ -1,0 +1,51 @@
+.chat {
+  background-color: #212C59;
+  color: #FFFFFF;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.historico {
+  border: 1px solid #FFFFFF;
+  padding: 10px;
+  height: 300px;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+.usuario {
+  color: #FFFFFF;
+}
+
+.ia {
+  color: #FFFFFF;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+form button {
+  background-color: #FFFFFF;
+  color: #212C59;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #212C59;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}

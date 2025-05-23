@@ -1,0 +1,69 @@
+.login {
+  background-color: #212C59;
+  color: #FFFFFF;
+  max-width: 100%;
+  margin: auto;
+  padding: 30px 25px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* centraliza horizontalmente */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(33, 44, 89, 0.6);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza os inputs e botão */
+  width: 100%;
+  max-width: 400px; /* limita a largura do form */
+}
+
+.login form input {
+  display: block;
+  margin: 15px 0;
+  width: 100%; /* ocupa toda a largura do form */
+  padding: 12px 15px;
+  border: 1.5px solid #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  text-align: center; /* centraliza o texto dentro do input */
+}
+
+.login form input::placeholder {
+  color: #cfcfcf;
+  text-align: center; /* placeholder centralizado também */
+}
+
+.login form input:focus {
+  outline: none;
+  border-color: #6ea0ff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.login form button {
+  background-color: #FFFFFF;
+  color: #212C59;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 100%; /* botão com mesma largura do input */
+  max-width: 400px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login form button:hover {
+  background-color: #212C59;
+  color: #FFFFFF;
+  border: 1.5px solid #FFFFFF;
+}

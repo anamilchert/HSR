@@ -1,11 +1,23 @@
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+
+import LandingPage from './pages/LandingPage';
+import LoginPage from './pages/Login';
+import RegisterPage from './pages/Register';
+import ChatPage from './pages/Chat';
 
 function App() {
   return (
-    <div>
-      <h1>HSR - Chatbot de IA</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/chat" element={<ChatPage />} />
+      </Routes>
+    </Router>
   );
 }
 
-export default App
+export default App;
