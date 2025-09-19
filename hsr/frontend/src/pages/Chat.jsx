@@ -9,7 +9,7 @@ const ChatPage = () => {
     e.preventDefault();
     setHistorico([...historico, { texto: mensagem, autor: 'Usuário' }]);
     setMensagem('');
-    // Aqui você integraria com a API da IA
+    // intgração com a Openai vai aqui
   };
 
   return (
