@@ -14,7 +14,7 @@ const ChatPage = () => {
 
   return (
     <div className="chat">
-      <h2>Chat com a IA</h2>
+      <h2>Chat</h2>
       <div className="historico">
         {historico.map((msg, idx) => (
           <div key={idx} className={msg.autor === 'Usuário' ? 'usuario' : 'ia'}>

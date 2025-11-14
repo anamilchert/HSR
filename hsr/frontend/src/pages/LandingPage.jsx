@@ -12,8 +12,7 @@ const LandingPage = () => (
       <div className="image-placeholder">
         <img src={minhaImagem}/>
       </div>
-      <h2>Bem-vindo à Ferramenta de Geração de Contratos!</h2>
-      <p>Automatize a criação de contratos comerciais de forma segura e rápida.</p>
+      <h2>Ferramenta de Geração de Contratos!</h2>
     </main>
     <Footer />
   </div>
