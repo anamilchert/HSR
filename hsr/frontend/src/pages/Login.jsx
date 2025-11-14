@@ -11,7 +11,6 @@ const LoginPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Aqui você faria a validação real do login
     if (email && senha) {
       // Simula sucesso no login
       console.log('Login bem-sucedido!');
