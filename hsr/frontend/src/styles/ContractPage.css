@@ -1,0 +1,119 @@
+.contract-page {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Inter", sans-serif;
+}
+
+.contract-page h1 {
+  color: #212C59;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contract-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contract-form label {
+  color: #212C59;
+  font-weight: 600;
+}
+
+.contract-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.contract-form button {
+  background-color: #212C59;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.contract-form button:hover {
+  background-color: #2d3c84;
+}
+
+.mensagem {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.contract-form select {
+  appearance: none; /* remove o estilo padrão do sistema */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 15px;
+  color: #212C59;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-family: "Inter", sans-serif;
+}
+
+.cliente-select {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn-novo {
+  background-color: #212C59;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.btn-novo:hover {
+  background-color: #39447d;
+}
+
+.novo-cliente-form {
+  margin-top: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.novo-cliente-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.novo-cliente-form button {
+  align-self: flex-start;
+  background-color: #212C59;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}

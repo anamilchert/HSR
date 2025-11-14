@@ -14,7 +14,7 @@ const LoginPage = () => {
     if (email && senha) {
       // Simula sucesso no login
       console.log('Login bem-sucedido!');
-      navigate('/chat');
+      navigate('/contrato');
     } else {
       alert('Preencha os campos!');
     }

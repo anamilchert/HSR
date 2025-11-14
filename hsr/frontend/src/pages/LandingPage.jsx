@@ -12,7 +12,7 @@ const LandingPage = () => (
       <div className="image-placeholder">
         <img src={minhaImagem}/>
       </div>
-      <h2>Ferramenta de Geração de Contratos!</h2>
+      <h2 className="titulo-landing">Ferramenta de Geração de Contratos!</h2>
     </main>
     <Footer />
   </div>
