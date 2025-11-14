@@ -3,9 +3,10 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const authRoutes = require('./routes/authRoutes');
-const formRoutes = require('./routes/formRoutes');
-const documentRoutes = require('./routes/documentRoutes');
+// const authRoutes = require('./routes/authRoutes');
+// const formRoutes = require('./routes/formRoutes');
+// const documentRoutes = require('./routes/documentRoutes');
+const contractRoutes = require('./routes/contractRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -17,9 +18,10 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
   .then(() => console.log('Conectado ao MongoDB'))
   .catch(err => console.error('Erro ao conectar ao MongoDB:', err));
 
-app.use('/auth', authRoutes);
-app.use('/forms', formRoutes);
-app.use('/documents', documentRoutes);
+// app.use('/auth', authRoutes);
+// app.use('/forms', formRoutes);
+// app.use('/documents', documentRoutes);
+app.use('/contratos', contractRoutes);
 
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
