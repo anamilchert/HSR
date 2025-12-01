@@ -7,7 +7,6 @@ const client = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
-// 🔹 Gera contrato com base nos dados fornecidos
 router.post("/contrato", async (req, res) => {
   try {
     const { nomeCliente, dataContrato, tipoContrato, localizacao } = req.body;

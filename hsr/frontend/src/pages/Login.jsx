@@ -12,7 +12,6 @@ const LoginPage = () => {
     e.preventDefault();
 
     if (email && senha) {
-      // Simula sucesso no login
       console.log('Login bem-sucedido!');
       navigate('/contrato');
     } else {

@@ -8,7 +8,7 @@ const RegisterPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    navigate('/chat');
+    navigate('/contrato');
   };
 
   return (

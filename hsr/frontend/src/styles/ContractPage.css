@@ -30,6 +30,7 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   outline: none;
+      width: 71%;
 }
 
 .contract-form button {
@@ -54,11 +55,11 @@
 }
 
 .contract-form select {
-  appearance: none; /* remove o estilo padrão do sistema */
+  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  width: 100%;
+  width: 75%;
   padding: 10px 12px;
   border: 1px solid #ccc;
   border-radius: 8px;

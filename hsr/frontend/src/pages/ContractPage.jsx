@@ -97,7 +97,7 @@ const ContractPage = () => {
       navigate("/chat", { state: { contratoGerado, threadId } });
     } catch (error) {
       console.error(error);
-      setMensagem("❌ Erro ao criar contrato. Tente novamente.");
+      setMensagem("Erro ao criar contrato. Tente novamente.");
     }
   };
 
@@ -106,7 +106,6 @@ const ContractPage = () => {
       <h1>Cadastro de Contrato</h1>
 
       <form onSubmit={handleSubmit} className="contract-form">
-        {/* Cliente */}
         <label>Cliente</label>
         <div className="cliente-select">
           <select
@@ -131,7 +130,6 @@ const ContractPage = () => {
           </button>
         </div>
 
-        {/* Form novo cliente */}
         {mostrarNovoCliente && (
           <div className="novo-cliente-form">
             <input
