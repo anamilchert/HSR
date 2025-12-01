@@ -5,7 +5,6 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 // const authRoutes = require('./routes/authRoutes');
 // const formRoutes = require('./routes/formRoutes');
-// const documentRoutes = require('./routes/documentRoutes');
 const contractRoutes = require('./routes/contractRoutes');
 const assistantRoutes = require('./routes/assistantRoutes');
 const clientRoutes = require('./routes/clientRoutes');
@@ -21,8 +20,6 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
   .catch(err => console.error('Erro ao conectar ao MongoDB:', err));
 
 // app.use('/auth', authRoutes);
-// app.use('/forms', formRoutes);
-// app.use('/documents', documentRoutes);
 app.use('/contratos', contractRoutes);
 app.use('/assistant', assistantRoutes);
 app.use('/clients', clientRoutes);
