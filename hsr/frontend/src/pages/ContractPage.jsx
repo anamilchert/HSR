@@ -26,13 +26,9 @@ const ContractPage = () => {
 
   useEffect(() => {
     const fetchClientes = async () => {
-      try {
-        const res = await fetch("http://localhost:5000/clients");
-        const data = await res.json();
-        setClientes(data);
-      } catch (err) {
-        console.error("Erro ao buscar clientes:", err);
-      }
+      const res = await fetch("http://localhost:5000/clients");
+      const data = await res.json();
+      setClientes(data);
     };
     fetchClientes();
   }, []);
@@ -53,24 +49,19 @@ const ContractPage = () => {
 
   const handleCadastrarCliente = async (e) => {
     e.preventDefault();
-    try {
-      const res = await fetch("http://localhost:5000/clients", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(novoCliente),
-      });
-      const data = await res.json();
-      setClientes((prev) => [...prev, data]);
-      setFormData({ ...formData, clienteId: data._id });
-      setMostrarNovoCliente(false);
-      setNovoCliente({ nome: "", email: "", telefone: "", cnpjCpf: "", endereco: "" });
-      alert("Cliente cadastrado com sucesso!");
-    } catch (err) {
-      console.error(err);
-      alert("Erro ao cadastrar cliente.");
-    }
-  };
 
+    const res = await fetch("http://localhost:5000/clients", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(novoCliente),
+    });
+
+    const data = await res.json();
+    setClientes((prev) => [...prev, data]);
+    setFormData({ ...formData, clienteId: data._id });
+    setMostrarNovoCliente(false);
+    setNovoCliente({ nome: "", email: "", telefone: "", cnpjCpf: "", endereco: "" });
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -83,7 +74,7 @@ const ContractPage = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          nomeCliente: cliente?.nome,
+          nomeCliente: cliente.nome,
           dataContrato: formData.dataContrato,
           tipoContrato: formData.tipoContrato,
           localizacao: formData.localizacao,
@@ -91,13 +82,28 @@ const ContractPage = () => {
       });
 
       const dataAssist = await resAssist.json();
-      const contratoGerado = dataAssist.contratoGerado;
-      const threadId = dataAssist.threadId;
 
-      navigate("/chat", { state: { contratoGerado, threadId } });
+      await fetch("http://localhost:5000/contratos", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          nomeCliente: cliente.nome,
+          dataContrato: formData.dataContrato,
+          tipoContrato: formData.tipoContrato,
+          localizacao: formData.localizacao,
+          textoGerado: dataAssist.contratoGerado,
+          threadId: dataAssist.threadId,
+        }),
+      });
+
+      navigate("/chat", {
+        state: {
+          contratoGerado: dataAssist.contratoGerado,
+          threadId: dataAssist.threadId,
+        },
+      });
     } catch (error) {
-      console.error(error);
-      setMensagem("Erro ao criar contrato. Tente novamente.");
+      setMensagem("Erro ao criar contrato.");
     }
   };
 

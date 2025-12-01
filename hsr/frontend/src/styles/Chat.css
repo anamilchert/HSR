@@ -121,3 +121,12 @@
 .chat-form button:hover {
   background-color: #2a3c83;
 }
+
+.botao-novo-contrato {
+    background-color: #212C59;
+    color: white;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}

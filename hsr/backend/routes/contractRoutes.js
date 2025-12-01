@@ -12,7 +12,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-// POST - criar novo contrato
 router.post("/", async (req, res) => {
   try {
     const { nomeCliente, dataContrato, tipoContrato, localizacao } = req.body;
@@ -25,7 +24,9 @@ router.post("/", async (req, res) => {
       nomeCliente,
       dataContrato,
       tipoContrato,
-      localizacao
+      localizacao,
+      textoGerado: contratoGerado, 
+      threadId,  
     });
 
     await novoContrato.save();

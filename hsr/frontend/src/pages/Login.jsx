@@ -13,7 +13,7 @@ const LoginPage = () => {
 
     if (email && senha) {
       console.log('Login bem-sucedido!');
-      navigate('/contrato');
+      navigate('/chat');
     } else {
       alert('Preencha os campos!');
     }

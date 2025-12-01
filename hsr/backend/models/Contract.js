@@ -17,6 +17,14 @@ const ContractSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+    textoGerado: {
+    type: String,
+    required: true
+  },
+  threadId: {
+    type: String,
+    default: null
+  },
   criadoEm: {
     type: Date,
     default: Date.now
