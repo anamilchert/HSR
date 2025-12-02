@@ -2,6 +2,11 @@
 
 HSR é um chatbot de inteligência artificial desenvolvido em React no frontend e com suporte a APIs de IA no backend. Este projeto visa fornecer uma interface interativa para comunicação com um modelo de IA.
 
+# PAC - Projeto de Aprendizagem Colaborativa Extensionista do Curso de Engenharia de Software da Católica de Santa Catarina
+
+*Autor: Ana Luisa Milchert*
+
+*Professores orientadores: Luiz Carlos Camargo e Claudinei Dias*
 
 🚀 ***Tecnologias Utilizadas***
 

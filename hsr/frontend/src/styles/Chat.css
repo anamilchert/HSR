@@ -130,3 +130,29 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
+.editor-contrato {
+  width: 100%;
+  height: 60vh;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  resize: none;
+}
+
+.botoes-download {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.botoes-download button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.botoes-download button:disabled {
+  background-color: #b5b5b5;
+  cursor: not-allowed;
+}
